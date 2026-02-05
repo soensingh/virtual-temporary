@@ -1,0 +1,531 @@
+.pageContainer {
+  min-height: 100vh;
+  background: #000;
+  color: #fff;
+}
+
+/* Hero Section */
+.heroSection {
+  background: linear-gradient(135deg, #0a0a0a 0%, #1a0a2e 50%, #2d1b4e 100%);
+  padding: 80px 20px 40px;
+  text-align: center;
+  position: relative;
+}
+
+.backButton {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  padding: 10px 20px;
+  background: rgba(138, 56, 245, 0.2);
+  border: 1px solid #8A38F5;
+  color: #fff;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.backButton:hover {
+  background: #8A38F5;
+  transform: translateX(-4px);
+}
+
+.pageTitle {
+  font-family: "Montserrat", sans-serif;
+  font-size: 42px;
+  font-weight: 700;
+  margin: 0 0 16px;
+  color: #fff;
+}
+
+.breadcrumb {
+  font-size: 14px;
+  color: rgba(255, 255, 255, 0.6);
+  margin: 0;
+}
+
+/* Tabs */
+.tabsContainer {
+  background: #111;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  padding: 0 20px;
+  display: flex;
+  justify-content: center;
+}
+
+.tabs {
+  display: flex;
+  gap: 24px;
+  max-width: 1400px;
+  width: 100%;
+}
+
+.tab {
+  background: transparent;
+  border: none;
+  color: rgba(255, 255, 255, 0.6);
+  padding: 18px 32px;
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  border-bottom: 3px solid transparent;
+  position: relative;
+}
+
+.tab:hover {
+  color: #fffb09;
+}
+
+.activeTab {
+  color: #fffb09;
+  border-bottom-color: #8A38F5;
+}
+
+/* Main Content */
+.mainContent {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 40px 20px;
+  display: grid;
+  grid-template-columns: 1fr 400px;
+  gap: 40px;
+}
+
+/* Left Column */
+.leftColumn {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+.courseImageWrapper {
+  width: 100%;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.4);
+}
+
+.courseImage {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.contentSection {
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 16px;
+  padding: 32px;
+}
+
+.sectionTitle {
+  font-family: "Montserrat", sans-serif;
+  font-size: 28px;
+  font-weight: 700;
+  margin: 0 0 20px;
+  color: #fff;
+}
+
+.subSectionTitle {
+  font-family: "Montserrat", sans-serif;
+  font-size: 22px;
+  font-weight: 600;
+  margin: 32px 0 16px;
+  color: #fffb09;
+}
+
+.description {
+  font-size: 15px;
+  line-height: 1.8;
+  color: rgba(255, 255, 255, 0.8);
+  margin-bottom: 24px;
+}
+
+.highlightsList {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.highlightsList li {
+  padding: 12px 0 12px 32px;
+  position: relative;
+  font-size: 14px;
+  line-height: 1.6;
+  color: rgba(255, 255, 255, 0.85);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.highlightsList li:last-child {
+  border-bottom: none;
+}
+
+.highlightsList li::before {
+  content: "✓";
+  position: absolute;
+  left: 0;
+  color: #8A38F5;
+  font-weight: 700;
+  font-size: 16px;
+}
+
+.syllabusText {
+  font-family: "Open Sans", sans-serif;
+  margin: 0;
+  color: rgba(255, 255, 255, 0.9);
+  white-space: pre-wrap;
+  font-size: 13px;
+  line-height: 1.8;
+  background: rgba(0, 0, 0, 0.3);
+  padding: 24px;
+  border-radius: 12px;
+  border-left: 3px solid #8A38F5;
+}
+
+.pricingCard {
+  background: linear-gradient(135deg, rgba(138, 56, 245, 0.1), rgba(255, 251, 9, 0.05));
+  border: 2px solid #8A38F5;
+  border-radius: 16px;
+  padding: 32px;
+  text-align: center;
+}
+
+.pricingHeader h3 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 24px;
+  margin: 0 0 8px;
+  color: #fff;
+}
+
+.pricingHeader p {
+  font-size: 14px;
+  color: rgba(255, 255, 255, 0.7);
+  margin: 0 0 24px;
+}
+
+.pricingDetails {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+  margin-bottom: 24px;
+}
+
+.oldPrice {
+  font-size: 20px;
+  color: rgba(255, 255, 255, 0.4);
+  text-decoration: line-through;
+}
+
+.currentPrice {
+  font-size: 36px;
+  font-weight: 700;
+  color: #fffb09;
+}
+
+.discount {
+  background: rgba(255, 251, 9, 0.2);
+  color: #fffb09;
+  padding: 4px 12px;
+  border-radius: 20px;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.enrollButton {
+  display: inline-block;
+  padding: 14px 40px;
+  background: linear-gradient(135deg, #fffb09, #8A38F5);
+  color: #000;
+  border-radius: 8px;
+  text-decoration: none;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  font-size: 15px;
+  transition: all 0.3s ease;
+}
+
+.enrollButton:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(255, 251, 9, 0.3);
+}
+
+/* Right Sidebar */
+.rightSidebar {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.infoCard, .helpCard, .contactFormCard {
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 16px;
+  padding: 24px;
+}
+
+.cardTitle {
+  font-family: "Montserrat", sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  margin: 0 0 20px;
+  color: #fff;
+}
+
+.infoItem {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  padding: 16px 0;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.infoItem:last-child {
+  border-bottom: none;
+}
+
+.infoIcon {
+  font-size: 24px;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(138, 56, 245, 0.1);
+  border-radius: 8px;
+}
+
+.infoLabel {
+  font-size: 12px;
+  color: rgba(255, 255, 255, 0.6);
+  margin: 0 0 4px;
+}
+
+.infoValue {
+  font-size: 14px;
+  font-weight: 600;
+  color: #fff;
+  margin: 0;
+}
+
+/* Help Card */
+.helpCard {
+  text-align: center;
+  background: linear-gradient(135deg, rgba(138, 56, 245, 0.1), rgba(255, 251, 9, 0.05));
+  border: 2px solid #8A38F5;
+}
+
+.helpIcon {
+  font-size: 48px;
+  margin-bottom: 16px;
+}
+
+.helpTitle {
+  font-family: "Montserrat", sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  margin: 0 0 12px;
+  color: #fff;
+}
+
+.phoneNumber {
+  display: block;
+  font-size: 22px;
+  font-weight: 700;
+  color: #fffb09;
+  text-decoration: none;
+  margin-bottom: 16px;
+}
+
+.chatButton {
+  display: inline-block;
+  padding: 10px 24px;
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  color: #fff;
+  border-radius: 6px;
+  text-decoration: none;
+  font-size: 13px;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.chatButton:hover {
+  background: rgba(255, 255, 255, 0.15);
+}
+
+/* Contact Form */
+.contactForm {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+/* Contact Form */
+.contactForm {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.formGroup, .inputGroup {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.groupLabel, .inputLabel {
+  font-size: 12px;
+  font-weight: 600;
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.radioGroup {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.radioLabel {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 13px;
+  color: rgba(255, 255, 255, 0.9);
+  cursor: pointer;
+}
+
+.radioLabel input[type="radio"] {
+  accent-color: #8A38F5;
+  width: 16px;
+  height: 16px;
+  cursor: pointer;
+}
+
+.textInput {
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  color: #fff;
+  padding: 10px 12px;
+  border-radius: 6px;
+  font-family: inherit;
+  font-size: 14px;
+  outline: none;
+  transition: border-color 0.15s ease, background 0.15s ease;
+}
+
+.textInput:focus {
+  border-color: #8A38F5;
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.lockedInput {
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  color: rgba(255, 255, 255, 0.6);
+  padding: 10px 12px;
+  border-radius: 6px;
+  font-family: inherit;
+  font-size: 14px;
+  cursor: not-allowed;
+}
+
+.disclaimer {
+  font-size: 10px;
+  color: rgba(255, 255, 255, 0.4);
+  text-align: center;
+  margin: 0;
+}
+
+.formInput, .formTextarea {
+  width: 100%;
+  padding: 12px 16px;
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 8px;
+  color: #fff;
+  font-size: 14px;
+  font-family: "Open Sans", sans-serif;
+  transition: all 0.3s ease;
+}
+
+.formInput:focus, .formTextarea:focus {
+  outline: none;
+  border-color: #8A38F5;
+  background: rgba(255, 255, 255, 0.08);
+}
+
+.formInput::placeholder, .formTextarea::placeholder {
+  color: rgba(255, 255, 255, 0.4);
+}
+
+.submitButton {
+  padding: 14px;
+  background: #8A38F5;
+  border: none;
+  border-radius: 8px;
+  color: #fff;
+  font-weight: 700;
+  font-size: 14px;
+  letter-spacing: 0.5px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.submitButton:hover {
+  background: #7a2bd9;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(138, 56, 245, 0.4);
+}
+
+/* Error Container */
+.errorContainer {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: #000;
+  color: #fff;
+  gap: 20px;
+}
+
+.errorContainer .backButton {
+  position: static;
+  background: #8A38F5;
+  border: none;
+  padding: 12px 24px;
+  transform: none;
+}
+
+.errorContainer .backButton:hover {
+  background: #7a2bd9;
+}
+
+/* Responsive */
+@media (max-width: 1024px) {
+  .mainContent {
+    grid-template-columns: 1fr;
+  }
+  
+  .rightSidebar {
+    order: -1;
+  }
+  
+  .pageTitle {
+    font-size: 32px;
+  }
+  
+  .tabs {
+    overflow-x: auto;
+  }
+  
+  .tab {
+    padding: 16px 24px;
+    white-space: nowrap;
+  }
+}
